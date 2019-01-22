@@ -1,10 +1,12 @@
 # Portfolio
 This to learn Git, GitHub, Html, and Css by building a portfolio.
 # Demo
-[Portfolio](myportfoliolink)
+[Portfolio](https://adrienvictor.github.io/Git-Lesson-AF/)
 # Technologies
 * Htlm
 * Css
 * JavaScript
-# License
+# Licence
+#### MIT
 # Author
+#### Asabeneh
