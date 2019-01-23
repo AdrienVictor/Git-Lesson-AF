@@ -3,16 +3,24 @@
 /* ==== Body Style ==== */
 
 img {
-        width: 30%;
-        border-radius: 5px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; 
       }
 .head-wrapper {
     display: inline-flex;
+    width: 100%;
     }
 .head-wrapper div {
     width: 30%;
-    height: 200px;
+    height: 100px;
     border: 2px solid red;
+}
+.head-wrapper img{
+    max-width:100%; 
+    max-height:100%;
+    margin: start;
+    display:block;
 }
    /*   div {
         width: 100px;
