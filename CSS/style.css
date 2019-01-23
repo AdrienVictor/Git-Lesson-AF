@@ -8,20 +8,21 @@ img {
         object-fit: contain; 
       }
 .head-wrapper {
-    display: inline-flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    
     }
 .head-wrapper div {
-    width: 30%;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border: 2px solid red;
-}
-.head-wrapper img{
-    max-width:100%; 
-    max-height:100%;
-    margin: start;
-    display:block;
-}
+    }
+
+    
+    
+
    /*   div {
         width: 100px;
         height: 100px;
