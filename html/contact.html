@@ -13,14 +13,19 @@
         <li><a href="./contact.html">Contacts</a></li>
       </ul>
     </header>
-    <h1>Contacts</h1>
+    <h1>Contact</h1>
     <div class="form-container">
       <form>
         <div class="label-container">
           <!-- As shown in class exemple:
-                        <label>Frist Name:</label>
           -->
-          <input type="text" placeholder="First Name" /><br />
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+          /><br />
         </div>
         <div class="label-container">
           <input type="text" placeholder="Last Name" /><br />
@@ -31,14 +36,13 @@
         <div class="label-container">
           <input type="password" placeholder="Password" /> <br />
         </div>
-        <div class="label-container"><input type="date" /><br /></div>
+        <div class="label-container"><input type="datetime-local" /><br /></div>
         <div class="label-container">
           <input type="number" placeholder="Age" /><br />
         </div>
-        <div class="label-container">
+        <div class="label-container-color">
           <label>Favorite Color:</label> <input type="color" /><br />
         </div>
-
         <label>Gender:</label>
         <input type="radio" name="gender" value="Female" /> Female
         <input type="radio" name="gender" value="Male" /> Male
@@ -50,6 +54,14 @@
           <option value="Kenya">Kenya</option>
           <option value="Korea">Korea</option>
         </select>
+        <br />
+        <label>Skills</label> <input type="checkbox" /> Html
+        <input type="checkbox" /> CSS <input type="checkbox" /> JavaScript
+        <input type="checkbox" /> React <br />
+        <label for="">Your Message Goes Here:</label><br />
+        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
       </form>
     </div>
     <footer>

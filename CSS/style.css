@@ -1,3 +1,5 @@
+/* ==== INDEX.HTML */
+
 /* ==== Body Style ==== */
 
 img {
@@ -7,9 +9,11 @@ img {
 }
 .head-wrapper {
   display: grid;
-  width: 100%;
+  max-width: 100%;
+  width: 80%;
   grid-template-columns: 33% 33% 33%;
   grid-gap: 10px;
+  margin: auto;
 }
 .head-wrapper div {
   width: 100%;
@@ -40,6 +44,22 @@ span {
 .header-nav li a {
   text-decoration: none;
 }
+table {
+  width: 40%;
+  max-width: 50%;
+  margin: auto;
+  align-content: center;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 10%;
+}
 
 /*==== Footer Style ===*/
 footer {
@@ -55,4 +75,8 @@ footer {
 }
 .label-container input {
   flex: 0.2;
+}
+form {
+  background-color: aquamarine;
+  max-width: 300px;
 }
