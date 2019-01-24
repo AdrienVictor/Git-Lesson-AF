@@ -66,7 +66,9 @@ td {
 
 /*==== Footer Style ===*/
 footer {
-  background: lightblue;
+  background: gold;
+  border: 2px solid black;
+  color: red;
 }
 /*===== CONTACT.HTML====*/
 
