@@ -25,20 +25,35 @@
             id="firstname"
             name="firstname"
             placeholder="First Name"
+            required
+            minlength="2"
+            maxlength="15"
           /><br />
         </div>
         <div class="label-container">
-          <input type="text" placeholder="Last Name" /><br />
+          <input
+            type="text"
+            placeholder="Last Name"
+            required
+            minlength="2"
+            maxlength="15"
+          /><br />
         </div>
         <div class="label-container">
-          <input type="email" placeholder="Email" /> <br />
+          <input type="email" placeholder="Email" required /> <br />
         </div>
         <div class="label-container">
-          <input type="password" placeholder="Password" /> <br />
+          <input
+            type="password"
+            placeholder="Password"
+            minlength="6"
+            maxlength="32"
+          />
+          <br />
         </div>
         <div class="label-container"><input type="datetime-local" /><br /></div>
         <div class="label-container">
-          <input type="number" placeholder="Age" /><br />
+          <input type="number" placeholder="Age" min="18" max="75" /><br />
         </div>
         <div class="label-container-color">
           <label>Favorite Color:</label> <input type="color" /><br />
@@ -47,6 +62,12 @@
         <input type="radio" name="gender" value="Female" /> Female
         <input type="radio" name="gender" value="Male" /> Male
         <input type="radio" name="gender" value="Other" /> Other <br />
+        <label for="">Region</label>
+        <input
+          type="text"
+          pattern="[fF]innish|[sS]wedish|[dD]anish|[nN]orwegian"
+        />
+        <br />
         <label>Country:</label>
         <select>
           <option value="finland">Finland </option>
