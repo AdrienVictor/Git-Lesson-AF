@@ -43,7 +43,7 @@ span {
   background-color: lightcoral;
 }
 header {
-  position: fixed;
+  /* position: fixed; */
 }
 /* span is used to create a background for the text */
 /*=== Header Style ===*/
@@ -143,14 +143,20 @@ i {
 
 /*==== Form Style ====*/
 
-.label-container {
+/* .label-container {
   display: flex;
   padding: 5px 0;
 }
 .label-container input {
   flex: 1;
-}
+} */
 form {
   background-color: aquamarine;
-  max-width: 300px;
+  max-width: 400px;
+}
+legend {
+  text-align: right;
+}
+.form-group p {
+  display: none;
 }

@@ -6,84 +6,134 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="../index.html"> Home</a></li>
-        <li><a href="./skills.html">Skills</a></li>
+      <div class="head-wrapper">
+        <div>
+          <img src="../Assets/Images/firstgithubimage.jpg" alt="Tram" />
+        </div>
+        <div>
+          <h3>Adrien Fernandez</h3>
+        </div>
+        <div>
+          <address>
+            Lauttasaari <br />
+            Finland
+          </address>
+        </div>
+      </div>
+
+      <ul class="header-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./html/skills.html">Skills</a></li>
         <li><a href="./project.html">Projects</a></li>
-        <li><a href="./contact.html">Contacts</a></li>
+        <li><a href="./html/contact.html">Contacts</a></li>
       </ul>
     </header>
-    <h1>Contact</h1>
-    <div class="form-container">
-      <form>
-        <div class="label-container">
-          <!-- As shown in class exemple:
-          -->
-          <label for="firstname">First Name:</label>
-          <input
-            type="text"
-            id="firstname"
-            name="firstname"
-            placeholder="First Name"
-            required
-            pattern="[A-Z]{1}[a-z]{2,14}"
-          /><br />
-        </div>
-        <div class="label-container">
-          <input
-            type="text"
-            placeholder="Last Name"
-            required
-            minlength="2"
-            maxlength="15"
-          /><br />
-        </div>
-        <div class="label-container">
-          <input type="email" placeholder="Email" required /> <br />
-        </div>
-        <div class="label-container">
-          <input
-            type="password"
-            placeholder="Password"
-            minlength="6"
-            maxlength="32"
-          />
-          <br />
-        </div>
-        <div class="label-container"><input type="datetime-local" /><br /></div>
-        <div class="label-container">
-          <input type="number" placeholder="Age" min="18" max="75" /><br />
-        </div>
-        <div class="label-container-color">
-          <label>Favorite Color:</label> <input type="color" /><br />
-        </div>
-        <label>Gender:</label>
-        <input type="radio" name="gender" value="Female" /> Female
-        <input type="radio" name="gender" value="Male" /> Male
-        <input type="radio" name="gender" value="Other" /> Other <br />
-        <label for="">Region</label>
-        <input
-          type="text"
-          pattern="[fF]innish|[sS]wedish|[dD]anish|[nN]orwegian"
-        />
-        <br />
-        <label>Country:</label>
-        <select>
-          <option value="finland">Finland </option>
-          <option value="france">France</option>
-          <option value="Kenya">Kenya</option>
-          <option value="Korea">Korea</option>
-        </select>
-        <br />
-        <label>Skills</label> <input type="checkbox" /> Html
-        <input type="checkbox" /> CSS <input type="checkbox" /> JavaScript
-        <input type="checkbox" /> React <br />
-        <label for="">Your Message Goes Here:</label><br />
-        <textarea id="message" name="message" cols="30" rows="10"></textarea>
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+    <main>
+      <h1>Contact</h1>
+      <div class="form-container">
+        <form>
+          <fieldset>
+            <legend>form legend</legend>
+
+            <div class="label-container">
+              <!-- As shown in class exemple:
+              -->
+              <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="First Name"
+                  required
+                  pattern="[A-Z]{1}[a-z]{2,14}"
+                />
+                <p class="error-message">
+                  your name must be between 2 and 15 characters
+                </p>
+              </div>
+            </div>
+
+            <div class="label-container">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  minlength="2"
+                  maxlength="15"
+                />
+              </div>
+            </div>
+            <div class="label-container">
+              <input type="email" placeholder="Email" required /> <br />
+            </div>
+            <div class="label-container">
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  minlength="6"
+                  maxlength="32"
+                />
+                <p class="error-message">you must enter an email</p>
+              </div>
+              <br />
+            </div>
+            <div class="label-container">
+              <input type="datetime-local" /><br />
+            </div>
+            <div class="label-container">
+              <div class="form-group">
+                <input type="number" placeholder="Age" min="18" max="75" />
+              </div>
+            </div>
+            <div class="label-container-color">
+              <div class="form-group">
+                <label>Favorite Color:</label> <input type="color" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Gender:</label>
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="Other" /> Other
+            </div>
+            <div class="form-group">
+              <label for="">Region</label>
+              <input
+                type="text"
+                pattern="[fF]innish|[sS]wedish|[dD]anish|[nN]orwegian"
+              />
+            </div>
+            <div class="form-group">
+              <label>Country:</label>
+              <select>
+                <option value="finland">Finland </option>
+                <option value="france">France</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Korea">Korea</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Skills</label> <input type="checkbox" /> Html
+              <input type="checkbox" /> CSS <input type="checkbox" /> JavaScript
+              <input type="checkbox" /> React
+            </div>
+            <label for="">Your Message Goes Here:</label>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
     <footer>
       <ul>
         <li><a href="#">GitHub</a></li>
