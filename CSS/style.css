@@ -1,9 +1,7 @@
 /* ==== INDEX.HTML */
 
 /* ==== Body Style ==== */
-main {
-  margin-top: 0px;
-}
+
 img {
   width: 20%;
   object-fit: contain;
@@ -41,9 +39,6 @@ img {
       }*/
 span {
   background-color: lightcoral;
-}
-header {
-  /* position: fixed; */
 }
 /* span is used to create a background for the text */
 /*=== Header Style ===*/
@@ -87,36 +82,6 @@ td {
   width: 10%;
 }
 
-.item {
-  position: relative;
-  border: 2px solid orange;
-  width: 35%;
-  height: 100px;
-  margin: 0 auto;
-  left: 250px;
-}
-.first-item {
-  background: red;
-  top: 10px;
-  z-index: -1;
-}
-.second-item {
-  background: green;
-  top: 110px;
-}
-.third-item {
-  background: blue;
-  top: 210px;
-}
-.sticky-note {
-  position: fixed;
-  background: red;
-  width: 450px;
-  padding: 5px;
-  bottom: 10px;
-  right: 10px;
-}
-
 /*==== Footer Style ===*/
 footer {
   background: lightblue;
@@ -143,20 +108,14 @@ i {
 
 /*==== Form Style ====*/
 
-/* .label-container {
+.label-container {
   display: flex;
   padding: 5px 0;
 }
 .label-container input {
   flex: 1;
-} */
+}
 form {
   background-color: aquamarine;
-  max-width: 450px;
-}
-legend {
-  text-align: right;
-}
-.form-group p {
-  display: none;
+  max-width: 400px;
 }
