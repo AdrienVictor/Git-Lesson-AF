@@ -6,12 +6,24 @@ img {
   width: 20%;
   object-fit: contain;
 }
+header {
+  background-color: bisque;
+}
 .head-wrapper {
+<<<<<<< HEAD
   display: inline-flex;
   background: url(../Assets/Images/pink-lonely-chair-website-header-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+=======
+  display: grid;
+  max-width: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  margin: auto;
+>>>>>>> e5c26fef26a77c08e96736d5417f3c57936b243b
 }
 .head-wrapper div {
   width: 33%;
@@ -69,7 +81,10 @@ table {
   width: 40%;
   max-width: 50%;
   margin: auto;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> e5c26fef26a77c08e96736d5417f3c57936b243b
 }
 table,
 th,
@@ -80,11 +95,14 @@ td {
 th,
 td {
   width: 10%;
+  text-align: center;
 }
 
 /*==== Footer Style ===*/
 footer {
-  background: lightblue;
+  background: gold;
+  border: 2px solid black;
+  color: red;
 }
 
 /* ==== SOCIAL MEDIA ICONS */
