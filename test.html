@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lets talk about flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .flex-container {
+        background: dodgerblue;
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        /* align-content: stretch; */
+      }
+      .item {
+        background: lightgoldenrodyellow;
+        width: 200px;
+        height: 100px;
+        margin: 2px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .item1 {
+        flex-shrink: 2;
+        align-self: flex-start;
+      }
+      .item3 {
+        flex-shrink: 3;
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FlexBox</h1>
+    <div class="flex-container">
+      <div class="item item1">item 1</div>
+      <div class="item item2">item 2</div>
+      <div class="item item3">item 3</div>
+      <!-- <div class="item item4">item 4</div>
+      <div class="item item5">item 5</div>
+      <div class="item item6">item 6</div>
+      <div class="item item7">item 7</div>
+      <div class="item item8">item 8</div>
+      <div class="item item9">item 9</div>
+      <div class="item item10">item 10</div>
+      <div class="item item11">item 11</div>
+      <div class="item item12">item 12</div> -->
+    </div>
+  </body>
+</html>
