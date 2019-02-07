@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .grid_container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /* grid-auto-rows: 100px; */
+        grid-gap: 10px 15px;
+        background: lightblue;
+        height: 400px;
+        justify-content: start;
+        /* align-items: end; */
+        align-content: end;
+      }
+      .grid_item {
+        border: 2px solid blue;
+        height: 100px;
+        width: 200px;
+      }
+      .item9 {
+        grid-column: span 4;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>let's talk about grid</h1>
+    <div class="grid_container">
+      <div class="grid_item">1</div>
+      <div class="grid_item">2</div>
+      <div class="grid_item">3</div>
+      <div class="grid_item">4</div>
+      <div class="grid_item">5</div>
+      <div class="grid_item">6</div>
+      <div class="grid_item">7</div>
+      <div class="grid_item">8</div>
+      <div class="grid_item item9">9</div>
+    </div>
+  </body>
+</html>
